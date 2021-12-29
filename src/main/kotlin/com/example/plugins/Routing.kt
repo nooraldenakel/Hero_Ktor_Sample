@@ -59,7 +59,7 @@ fun Application.configureRouting() {
             val header = call.request.headers["Connection"]
             if (username == "Admin") {
                 call.response.header(name = "CustomHeader", username)
-                call.respond(message = "Hello Admin $username", status = HttpStatusCode.OK)
+                call.respond(message = "Hello Admins $username", status = HttpStatusCode.OK)
             }
             call.respondText("Hello $username with $header")
         }
