@@ -8,7 +8,7 @@ import io.ktor.routing.*
 fun Route.root() {
     get("/") {
         call.respond(
-            message = "Hello From Naruto Api",
+            message = "Hello From Hero Api",
             status = HttpStatusCode.OK
         )
     }
