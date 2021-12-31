@@ -38,7 +38,4 @@ dependencies {
     implementation("io.ktor:ktor-gson:$ktorVersion")
     implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
 
-
-
-
 }
