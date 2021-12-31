@@ -12,13 +12,13 @@ data class Hero(
     @SerializedName("image")
     val image: String? = null,
     @SerializedName("description")
-    val description: String? = null,
+    val about: String? = null,
     @SerializedName("rating")
     val rating: Double? = null,
     @SerializedName("power")
     val power: Int? = null,
     @SerializedName("mouth")
-    val mouth: String? = null,
+    val month: String? = null,
     @SerializedName("day")
     val day: String? = null,
     @SerializedName("family")
