@@ -1,7 +1,7 @@
 package com.example.route
 
-import com.example.models.ApiResponse
-import com.example.models.Hero
+import com.example.data.models.ApiResponse
+import com.example.data.models.Hero
 import io.ktor.application.*
 import io.ktor.http.*
 import io.ktor.request.*
@@ -19,7 +19,7 @@ val natureTypes = mutableListOf(
 )
 val heroList = mutableListOf(
     Hero(
-        id = 1,
+        id = "1",
         name = "Baruto",
         image = "https://m.media-amazon.com/images/M/MV5BMDFjYTc1ODgtNjRlNi00ZDllLTg3ZGYtMjJlYTA0NjBkYWZlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
         about = "Boruto: Naruto Next Generations is a Japanese manga series written by Ukyō Kodachi and Masashi Kishimoto, and illustrated by Mikio Ikemoto",
@@ -32,7 +32,7 @@ val heroList = mutableListOf(
         natureTypes = natureTypes
     ),
     Hero(
-        id = 2,
+        id = "2",
         name = "Naruto",
         image = "https://m.media-amazon.com/images/M/MV5BMDFjYTc1ODgtNjRlNi00ZDllLTg3ZGYtMjJlYTA0NjBkYWZlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
         about = "Boruto: Naruto Next Generations is a Japanese manga series written by Ukyō Kodachi and Masashi Kishimoto, and illustrated by Mikio Ikemoto",
@@ -60,7 +60,7 @@ fun Route.newPost() {
     }
     post("/hero/new") {
         val params = call.receiveParameters()
-        val id = params["id"]?.toInt()
+        val id = params["id"]
         val name = params["name"]
         val image = params["image"]
         val description = params["description"]

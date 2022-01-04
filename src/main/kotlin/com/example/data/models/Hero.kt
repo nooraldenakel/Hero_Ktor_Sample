@@ -1,4 +1,4 @@
-package com.example.models
+package com.example.data.models
 
 import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.Serializable
@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Hero(
     @SerializedName("id")
-    val id: Int? = null,
+    val id: String? = null,
     @SerializedName("name")
     val name: String? = null,
     @SerializedName("image")

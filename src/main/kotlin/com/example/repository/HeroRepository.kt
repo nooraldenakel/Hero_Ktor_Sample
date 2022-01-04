@@ -1,7 +1,7 @@
 package com.example.repository
 
-import com.example.models.ApiResponse
-import com.example.models.Hero
+import com.example.data.models.ApiResponse
+import com.example.data.models.Hero
 
 interface HeroRepository {
     val heroes: Map<Int, List<Hero>>

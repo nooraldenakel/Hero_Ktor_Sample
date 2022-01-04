@@ -1,6 +1,6 @@
 package com.example.route
 
-import com.example.models.ApiResponse
+import com.example.data.models.ApiResponse
 import com.example.repository.HeroRepository
 import com.example.repository.HeroRepositoryLimit
 import io.ktor.application.*

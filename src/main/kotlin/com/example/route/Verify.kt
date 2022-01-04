@@ -1,6 +1,6 @@
 package com.example.route
 
-import com.example.models.Hero
+import com.example.data.models.Hero
 import io.ktor.application.*
 import io.ktor.request.*
 import io.ktor.response.*
